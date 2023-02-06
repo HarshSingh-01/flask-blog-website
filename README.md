@@ -40,12 +40,15 @@ The app will run on:
 
 You can change the port number in <strong>app.py</strong> file.
 
-Press: Ctrl + C for closing the server.
+Press: Ctrl + C to close the server.
 
-### 6. Deactivating the environment <br/>
+### 6. Deactivate virtual environment <br/>
 ```sh
 deactivate
 ```
+
+## Conclusion
+This project is completed and free to use. The project's backend is fully written in Python Flask with SQL data base. The front-end is written on HTML, CSS and BootStrap. 
 
 
 
