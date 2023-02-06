@@ -1,7 +1,7 @@
 # Blog Website
 The project website’s front end is written on HTML, CSS and Bootstrap. Backend is written on Flask. Database used in this project is SQLite. The user can create his blogs, can edit them as well as able to delete them. There a public blog checkbox is also added in this, If the checkbox is checked that means the blog will get published publicly otherwise the blog will be private (can only be seen by the user). The newly created blogs will get display first.
+
 For user authentication the flask_login module used. While creating password by the user, the password gets hashed in the backend. This ensures the protection of the password.
-The website is fully secure for users and easy to use.
 
 ## How to use <br/>
 ### 1. Clone repostitory <br/>
