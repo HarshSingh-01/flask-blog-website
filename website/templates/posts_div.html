@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{%block title %} Posts div {% endblock %}
+
+{%block content %} 
+
+<div class="container-fluid">
+    <h3 align="center">{% block header %}Blog Posts{% endblock %}</h3>
+    <br>
+    <div class="post-container">
+
+            {% for post in posts|reverse%}
+            <div class="card" style="width: auto;">
+                <div class="card-body">
+    
+                <div class="dropdown-button">
+                {% if user.id == post.author %}
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown"></button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/edit-post/{{post.id}}" class="dropdown-item">Edit</a>
+                    </li>
+                    <li>
+                      <a href="/delete-post/{{post.id}}" class="dropdown-item">Delete</a>
+                    </li>
+                  </ul>
+                </div>
+                {% endif %}
+                </div>
+                <h6 class="card-subtitle mb-2 text-muted"><a href="/posts/{{post.user.username}}" style="text-decoration: None;">{{post.user.username}}</a></h6>
+                  <h5 class="card-title">{{post.title}}</h5>
+                  <p class="card-text">{{post.content}}</p>
+                  <p class="card-text">{{post.date_created}}</p>
+                </div>
+              </div>
+              <br>
+              {% endfor %}
+            </div>
+    
+</div>
+{% endblock %}

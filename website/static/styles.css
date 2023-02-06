@@ -1,0 +1,14 @@
+.form-container {
+    padding: 50px 60px;
+}
+
+.post-container {
+    padding: 10px 100px;
+}
+
+.dropdown-button {
+    position: absolute;
+    left: 98%; 
+    padding: 0; 
+    margin: 0;
+}
