@@ -1,5 +1,6 @@
 # Blog Website
 This a blog website project. This allows users to create their own blogs, users can post their blog either public or private. 
+The project's backend is written in Python Flask with SQL data base. The front-end is written on HTML, CSS and BootStrap.
 
 ## How to use <br/>
 ### 1. Clone repostitory <br/>
@@ -48,7 +49,7 @@ deactivate
 ```
 
 ## Conclusion
-This project is completed and free to use. The project's backend is fully written in Python Flask with SQL data base. The front-end is written on HTML, CSS and BootStrap. 
+This is a complete project and open source for everyone.
 
 
 
